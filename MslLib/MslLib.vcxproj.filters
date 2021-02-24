@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{26d82c97-322d-4435-9376-38d7dbf9805c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Win32">
+      <UniqueIdentifier>{f443aff2-dfe7-4e57-893d-d5d2d57a7546}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Win32.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32_RefImpl.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicType.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="BitArray.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="RefObj.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BitArray.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
