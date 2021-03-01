@@ -35,6 +35,29 @@
     <ClCompile Include="ThreadPool.cpp">
       <Filter>线程\线程池</Filter>
     </ClCompile>
+    <ClCompile Include="AlignofCpp.cpp">
+      <Filter>内存</Filter>
+    </ClCompile>
+    <ClCompile Include="AlgorithmCpp.cpp">
+      <Filter>算法</Filter>
+    </ClCompile>
+    <ClCompile Include="Singleton.cpp">
+      <Filter>设计模式</Filter>
+    </ClCompile>
+    <ClCompile Include="Objector.cpp">
+      <Filter>设计模式</Filter>
+    </ClCompile>
+    <ClCompile Include="Event.cpp">
+      <Filter>设计模式</Filter>
+    </ClCompile>
+    <ClCompile Include="Visitor.cpp">
+      <Filter>设计模式</Filter>
+    </ClCompile>
+    <ClCompile Include="Command.cpp">
+      <Filter>设计模式</Filter>
+    </ClCompile>
+    <ClCompile Include="IocContainer.cpp" />
+    <ClCompile Include="Any.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Allocator.h">
@@ -70,6 +93,29 @@
     <ClInclude Include="ThreadPool.h">
       <Filter>线程\线程池</Filter>
     </ClInclude>
+    <ClInclude Include="AlignofCpp.h">
+      <Filter>内存</Filter>
+    </ClInclude>
+    <ClInclude Include="AlgorithmCpp.h">
+      <Filter>算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>设计模式</Filter>
+    </ClInclude>
+    <ClInclude Include="Objector.h">
+      <Filter>设计模式</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>设计模式</Filter>
+    </ClInclude>
+    <ClInclude Include="Visitor.h">
+      <Filter>设计模式</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>设计模式</Filter>
+    </ClInclude>
+    <ClInclude Include="IocContainer.h" />
+    <ClInclude Include="Any.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="内存">
@@ -86,6 +132,12 @@
     </Filter>
     <Filter Include="线程\线程池">
       <UniqueIdentifier>{8cbd0b8f-7594-418f-989a-548ff9d5bf06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="算法">
+      <UniqueIdentifier>{15251432-5eb0-4917-803e-3c0b8d51c3de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="设计模式">
+      <UniqueIdentifier>{069456e0-8939-4b47-9b08-844cdad0f2c5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -65,7 +65,9 @@ void ThreadDemo::thread_pool()
 	for (int n = 0; n < 100; n++) {
 		int index = n;	
 		pool.AddTask([index]() {
-			std::cout << "task index:= " << index << std::endl;
+			std::cout << "task index:= " << index 
+				<< ", this thread id:= " << std::this_thread::get_id()
+				<< std::endl;
 			});
 	}
 	pool.Stop();

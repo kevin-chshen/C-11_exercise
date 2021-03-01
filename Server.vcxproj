@@ -108,6 +108,8 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AssemblerOutput>All</AssemblerOutput>
+      <StructMemberAlignment>16Bytes</StructMemberAlignment>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -153,31 +155,49 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AlgorithmCpp.cpp" />
+    <ClCompile Include="AlignofCpp.cpp" />
     <ClCompile Include="Allocator.cpp" />
+    <ClCompile Include="Any.cpp" />
+    <ClCompile Include="Command.cpp" />
     <ClCompile Include="Common.cpp" />
     <ClCompile Include="cpp11.cpp" />
+    <ClCompile Include="Event.cpp" />
     <ClCompile Include="ForDemo.cpp" />
     <ClCompile Include="FuncAndBind.cpp" />
+    <ClCompile Include="IocContainer.cpp" />
     <ClCompile Include="Lamba.cpp" />
+    <ClCompile Include="Objector.cpp" />
     <ClCompile Include="Server.cpp" />
+    <ClCompile Include="Singleton.cpp" />
     <ClCompile Include="SyncQueue.cpp" />
     <ClCompile Include="TemplateOp.cpp" />
     <ClCompile Include="ThreadDemo.cpp" />
     <ClCompile Include="ThreadPool.cpp" />
     <ClCompile Include="TupleOp.cpp" />
+    <ClCompile Include="Visitor.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AlgorithmCpp.h" />
+    <ClInclude Include="AlignofCpp.h" />
     <ClInclude Include="Allocator.h" />
+    <ClInclude Include="Any.h" />
+    <ClInclude Include="Command.h" />
     <ClInclude Include="Common.h" />
     <ClInclude Include="cpp11.h" />
+    <ClInclude Include="Event.h" />
     <ClInclude Include="ForDemo.h" />
     <ClInclude Include="FuncAndBind.h" />
+    <ClInclude Include="IocContainer.h" />
     <ClInclude Include="Lamba.h" />
+    <ClInclude Include="Objector.h" />
+    <ClInclude Include="Singleton.h" />
     <ClInclude Include="SyncQueue.h" />
     <ClInclude Include="TemplateOp.h" />
     <ClInclude Include="ThreadDemo.h" />
     <ClInclude Include="ThreadPool.h" />
     <ClInclude Include="TupleOp.h" />
+    <ClInclude Include="Visitor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

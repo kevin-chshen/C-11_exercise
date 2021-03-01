@@ -9,11 +9,29 @@
 #include "Common.h"
 #include "TupleOp.h"
 #include "ThreadDemo.h"
-
-#include <thread>
+#include "AlignofCpp.h"
+#include "AlgorithmCpp.h"
+#include "Singleton.h"
+#include "Objector.h"
+#include "Event.h"
+#include "Visitor.h"
+#include "Command.h"
+#include "IocContainer.h"
+#include "Any.h"
 
 int main()
 {
+	//TestAny();
+	ioc_container_run();
+	//command_run();
+	//visitor_run();
+	//objector_run();
+	//event_foo();
+	//app::run();
+	//AlgorithmCpp al;
+	//al.run();
+	//AlignofCpp a;
+	//a.run();
 	//Common c;
 	//c.run();
 	//cpp11 c11;
@@ -29,10 +47,10 @@ int main()
 	//TemplateOp op;
 	//op.run();
 
+	/*ThreadDemo t;
+	t.run();*/
 	//ThreadDemo t;
 	//t.run();
-	ThreadDemo t;
-	t.run();
 
 	//std::cout << "main thread id:= " << std::this_thread::get_id() << std::endl;
 	//std::this_thread::sleep_for(std::chrono::seconds(5));

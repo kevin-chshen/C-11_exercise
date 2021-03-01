@@ -33,6 +33,9 @@ public:
 	}
 	void Take(std::list<T>& list)
 	{
+		std::cout << "SyncQueue Add "
+			<< ", this thread id:= " << std::this_thread::get_id()
+			<< std::endl;
 		std::unique_lock<U> locker(_mutex);
 		_not_empty.wait(locker, [this]() {
 			return _need_stop || NotEmpty();
@@ -83,6 +86,9 @@ public:
 private:
 	template<typename F>
 	void Add(F&& x) {
+		std::cout << "SyncQueue Add "
+			<< ", this thread id:= " << std::this_thread::get_id()
+			<< std::endl;
 		std::unique_lock<U> locker(_mutex);
 		_not_full.wait(locker, [this]() {
 			auto lock = _need_stop || NotFull();

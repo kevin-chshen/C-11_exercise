@@ -2,7 +2,8 @@
 
 ThreadPool::ThreadPool(int n_cpu)
 	:_queue(max_task_count, [](EnumEvent e) {
-			std::cout << "______e := " << (int)e << "___" << std::endl;
+			std::cout << "______e := " << (int)e << " ___ " 
+				<< std::this_thread::get_id() << std::endl;
 		}),
 	_finish_task_count(0)
 {
