@@ -52,12 +52,12 @@ public:
 			resolver.AnyCast<std::function<T * (Args...)>>();
 		return func(args...);
 	}
-	//template <typename T, typename... Args>
-	//std::shared_ptr<T> ResolveShared(const std::string& key, Args... args)
-	//{
-	//	T* ptr = Resolve(key, args...);
-	//	return std::shared_ptr<T>(ptr);
-	//}
+	template <typename T, typename... Args>
+	std::shared_ptr<T> ResolveShared(const std::string& key, Args... args)
+	{
+		T* ptr = Resolve<T>(key, args...);
+		return std::shared_ptr<T>(ptr);
+	}
 private:
 	void RegisterType(const std::string& key, Any creator)
 	{

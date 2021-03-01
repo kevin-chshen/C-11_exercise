@@ -46,10 +46,10 @@ void ioc_container_run()
 	ioc.RegisterType<My, Car>("car");
 
 	auto bus = ioc.Resolve<My>("bus");
-	//auto car = ioc.ResolveShared<My>("car");
+	auto car = ioc.ResolveShared<My>("car");
 
 	bus->Func();
-	//car->Func();
+	car->Func();
 }
 
 
