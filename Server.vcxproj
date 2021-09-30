@@ -176,6 +176,7 @@
     <ClCompile Include="TemplateOp.cpp" />
     <ClCompile Include="ThreadDemo.cpp" />
     <ClCompile Include="ThreadPool.cpp" />
+    <ClCompile Include="TryCatch.cpp" />
     <ClCompile Include="TupleOp.cpp" />
     <ClCompile Include="Visitor.cpp" />
   </ItemGroup>
@@ -200,6 +201,7 @@
     <ClInclude Include="TemplateOp.h" />
     <ClInclude Include="ThreadDemo.h" />
     <ClInclude Include="ThreadPool.h" />
+    <ClInclude Include="TryCatch.h" />
     <ClInclude Include="TupleOp.h" />
     <ClInclude Include="Visitor.h" />
   </ItemGroup>

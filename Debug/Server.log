@@ -1,5 +1,2 @@
-﻿  cpp11.cpp
-E:\test\C-11\cpp11.cpp(100,9): warning C5030: 未识别属性“omp::parallel”
-  Visitor.cpp
-  正在生成代码...
+﻿  TryCatch.cpp
   Server.vcxproj -> E:\test\C-11\Debug\Server.exe
