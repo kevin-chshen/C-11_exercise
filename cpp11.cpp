@@ -7,6 +7,7 @@
 #include <functional>
 #include <algorithm>
 #include <typeindex>
+#include <type_traits>
 
 enum Flags { good = 0, fail = 1, bad = 2, eof = 4 };
 constexpr int operator|(Flags f1, Flags f2)
@@ -210,7 +211,7 @@ namespace {
 	{
 		return std::function<T>((T*)([](int a) { return a; }));
 	}
-
+#ifdef Cpp14
 	template <typename Fn>
 	typename std::result_of<Fn(int)>::type foo2(const Fn& f)
 	{
@@ -250,6 +251,7 @@ namespace {
 			});
 		return map;
 	}
+#endif // !1
 }
 
 void cpp11::IsSameFunc()
@@ -266,7 +268,7 @@ void cpp11::IsSameFunc()
 void cpp11::ResultOfFunc()
 {
 	auto f = [](int a) { return a; };
-
+#ifdef Cpp14
 	typedef std::result_of<decltype(f) & (int)>::type A;
 	std::function<int(int)> fr = f;
 	std::cout << "fr:= " << fr(1) << '\n';
@@ -285,7 +287,7 @@ void cpp11::ResultOfFunc()
 	std::cout << '\n';
 	/*auto f = func<int(int)>(1);
 	std::cout <<  << std::endl;*/
-
+#endif		 
 }
 
 namespace

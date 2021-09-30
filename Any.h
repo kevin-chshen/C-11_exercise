@@ -1,6 +1,7 @@
 #pragma once
 #include <memory>
 #include <typeindex>
+#include <iostream>
 
 
 void TestAny();

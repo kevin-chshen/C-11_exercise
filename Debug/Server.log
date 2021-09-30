@@ -1,2 +1,5 @@
-﻿  Server.cpp
-  Server.vcxproj -> E:\project\game_server\Server\Debug\Server.exe
+﻿  cpp11.cpp
+E:\test\C-11\cpp11.cpp(100,9): warning C5030: 未识别属性“omp::parallel”
+  Visitor.cpp
+  正在生成代码...
+  Server.vcxproj -> E:\test\C-11\Debug\Server.exe

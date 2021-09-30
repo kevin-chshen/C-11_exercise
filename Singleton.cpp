@@ -1,7 +1,7 @@
 #include "Singleton.h"
 
 #include <string>
-#include <iostream>
+
 
 namespace app
 {

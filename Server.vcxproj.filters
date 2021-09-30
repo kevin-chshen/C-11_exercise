@@ -58,6 +58,8 @@
     </ClCompile>
     <ClCompile Include="IocContainer.cpp" />
     <ClCompile Include="Any.cpp" />
+    <ClCompile Include="delegate\Delegate.cpp" />
+    <ClCompile Include="sync\sync_test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Allocator.h">
@@ -116,6 +118,8 @@
     </ClInclude>
     <ClInclude Include="IocContainer.h" />
     <ClInclude Include="Any.h" />
+    <ClInclude Include="delegate\Delegate.h" />
+    <ClInclude Include="sync\sync_test.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="内存">

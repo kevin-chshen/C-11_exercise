@@ -162,6 +162,7 @@
     <ClCompile Include="Command.cpp" />
     <ClCompile Include="Common.cpp" />
     <ClCompile Include="cpp11.cpp" />
+    <ClCompile Include="delegate\Delegate.cpp" />
     <ClCompile Include="Event.cpp" />
     <ClCompile Include="ForDemo.cpp" />
     <ClCompile Include="FuncAndBind.cpp" />
@@ -171,6 +172,7 @@
     <ClCompile Include="Server.cpp" />
     <ClCompile Include="Singleton.cpp" />
     <ClCompile Include="SyncQueue.cpp" />
+    <ClCompile Include="sync\sync_test.cpp" />
     <ClCompile Include="TemplateOp.cpp" />
     <ClCompile Include="ThreadDemo.cpp" />
     <ClCompile Include="ThreadPool.cpp" />
@@ -185,6 +187,7 @@
     <ClInclude Include="Command.h" />
     <ClInclude Include="Common.h" />
     <ClInclude Include="cpp11.h" />
+    <ClInclude Include="delegate\Delegate.h" />
     <ClInclude Include="Event.h" />
     <ClInclude Include="ForDemo.h" />
     <ClInclude Include="FuncAndBind.h" />
@@ -193,6 +196,7 @@
     <ClInclude Include="Objector.h" />
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="SyncQueue.h" />
+    <ClInclude Include="sync\sync_test.h" />
     <ClInclude Include="TemplateOp.h" />
     <ClInclude Include="ThreadDemo.h" />
     <ClInclude Include="ThreadPool.h" />
