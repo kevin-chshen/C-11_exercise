@@ -83,11 +83,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\lib\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)..\build\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>..\lib</OutDir>
-    <IntDir>..\build\</IntDir>
+    <OutDir>$(SolutionDir)..\lib\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)..\build\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
