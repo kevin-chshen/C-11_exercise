@@ -22,6 +22,7 @@
     <ClInclude Include="BasicType.h" />
     <ClInclude Include="BitArray.h" />
     <ClInclude Include="RefObj.h" />
+    <ClInclude Include="queue\tc_cas_queue.h" />
     <ClInclude Include="Win32.h" />
     <ClInclude Include="Win32_RefImpl.h" />
   </ItemGroup>
@@ -53,7 +54,7 @@
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>

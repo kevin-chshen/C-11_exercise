@@ -24,6 +24,7 @@
     <ClInclude Include="RefObj.h">
       <Filter>Common</Filter>
     </ClInclude>
+    <ClInclude Include="queue\tc_cas_queue.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BitArray.cpp">

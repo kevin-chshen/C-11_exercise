@@ -4,9 +4,6 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="启动阶段">
-      <UniqueIdentifier>{0fc0f0a7-53ac-4f2e-a994-b6e013e9f363}</UniqueIdentifier>
-    </Filter>
     <Filter Include="线程">
       <UniqueIdentifier>{b7fb30b2-be06-48d8-9e35-dd9f217858c3}</UniqueIdentifier>
     </Filter>
@@ -21,6 +18,9 @@
     </Filter>
     <Filter Include="服务器状态查询">
       <UniqueIdentifier>{191548df-84a3-493f-bea2-0a9f1153c058}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="线程\启动阶段">
+      <UniqueIdentifier>{0fc0f0a7-53ac-4f2e-a994-b6e013e9f363}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
