@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "Server.vcxproj", "{D9899C72-90F1-4696-8957-9F73CE3B3FD4}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MslLib", "MslLib\MslLib.vcxproj", "{A40676A4-F4DE-4243-9BE5-179CE700EF16}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "exe_Master", "exe_Master\exe_Master.vcxproj", "{B09D49FA-3E58-467F-B389-D6AD01DC1EAB}"
@@ -27,18 +25,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D9899C72-90F1-4696-8957-9F73CE3B3FD4}.Debug|ARM.ActiveCfg = Debug|Win32
-		{D9899C72-90F1-4696-8957-9F73CE3B3FD4}.Debug|ARM64.ActiveCfg = Debug|Win32
-		{D9899C72-90F1-4696-8957-9F73CE3B3FD4}.Debug|x64.ActiveCfg = Debug|x64
-		{D9899C72-90F1-4696-8957-9F73CE3B3FD4}.Debug|x64.Build.0 = Debug|x64
-		{D9899C72-90F1-4696-8957-9F73CE3B3FD4}.Debug|x86.ActiveCfg = Debug|Win32
-		{D9899C72-90F1-4696-8957-9F73CE3B3FD4}.Debug|x86.Build.0 = Debug|Win32
-		{D9899C72-90F1-4696-8957-9F73CE3B3FD4}.Release|ARM.ActiveCfg = Release|Win32
-		{D9899C72-90F1-4696-8957-9F73CE3B3FD4}.Release|ARM64.ActiveCfg = Release|Win32
-		{D9899C72-90F1-4696-8957-9F73CE3B3FD4}.Release|x64.ActiveCfg = Release|x64
-		{D9899C72-90F1-4696-8957-9F73CE3B3FD4}.Release|x64.Build.0 = Release|x64
-		{D9899C72-90F1-4696-8957-9F73CE3B3FD4}.Release|x86.ActiveCfg = Release|Win32
-		{D9899C72-90F1-4696-8957-9F73CE3B3FD4}.Release|x86.Build.0 = Release|Win32
 		{A40676A4-F4DE-4243-9BE5-179CE700EF16}.Debug|ARM.ActiveCfg = Debug|Win32
 		{A40676A4-F4DE-4243-9BE5-179CE700EF16}.Debug|ARM64.ActiveCfg = Debug|Win32
 		{A40676A4-F4DE-4243-9BE5-179CE700EF16}.Debug|x64.ActiveCfg = Debug|x64
