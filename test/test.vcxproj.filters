@@ -81,6 +81,12 @@
     <ClCompile Include="Visitor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="char\char_test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="const\const_test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TemplateOp.h">
@@ -144,6 +150,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Visitor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="char\char_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="const\const_test.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

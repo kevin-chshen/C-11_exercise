@@ -149,8 +149,10 @@
     <ClCompile Include="AlignofCpp.cpp" />
     <ClCompile Include="Allocator.cpp" />
     <ClCompile Include="Any.cpp" />
+    <ClCompile Include="char\char_test.cpp" />
     <ClCompile Include="Command.cpp" />
     <ClCompile Include="Common.cpp" />
+    <ClCompile Include="const\const_test.cpp" />
     <ClCompile Include="cpp11.cpp" />
     <ClCompile Include="Event.cpp" />
     <ClCompile Include="ForDemo.cpp" />
@@ -173,8 +175,10 @@
     <ClInclude Include="AlignofCpp.h" />
     <ClInclude Include="Allocator.h" />
     <ClInclude Include="Any.h" />
+    <ClInclude Include="char\char_test.h" />
     <ClInclude Include="Command.h" />
     <ClInclude Include="Common.h" />
+    <ClInclude Include="const\const_test.h" />
     <ClInclude Include="cpp11.h" />
     <ClInclude Include="Event.h" />
     <ClInclude Include="ForDemo.h" />
