@@ -2,10 +2,14 @@
 //
 
 #include <iostream>
+#include <MslLib/queue/tc_cas_queue.h>
+
 
 int main()
 {
     std::cout << "Hello World!\n";
+    tc_cas_queue<int> tc;
+    tc.push_front(2);
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

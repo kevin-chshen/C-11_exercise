@@ -1,16 +1,17 @@
 #pragma once
 #include <deque>
+#include <mutex>
 #include <cassert>
 
 /**
  * @brief Thread Safe Queue
  * @brief 线程安全队列
  */
-template <typename T, typename D = deque<T> >
-class TC_CasQueue
+template<typename T, typename D = std::deque<T> >
+class tc_cas_queue
 {
 public:
-    TC_CasQueue() :_size(0) {};
+    tc_cas_queue() :_size(0) {};
 
 public:
 
@@ -111,10 +112,10 @@ public:
     bool empty() const;
 
 protected:
-    TC_CasQueue(const TC_CasQueue&) = delete;
-    TC_CasQueue(TC_CasQueue&&) = delete;
-    TC_CasQueue& operator=(const TC_CasQueue&) = delete;
-    TC_CasQueue& operator=(TC_CasQueue&&) = delete;
+    tc_cas_queue(const tc_cas_queue&) = delete;
+    tc_cas_queue(tc_cas_queue&&) = delete;
+    tc_cas_queue& operator=(const tc_cas_queue&) = delete;
+    tc_cas_queue& operator=(tc_cas_queue&&) = delete;
 
 protected:
 	/**
@@ -131,14 +132,14 @@ protected:
 	std::mutex _mutex;
 };
 
-template <typename T, typename D> T TC_CasQueue<T, D>::front()
+template <typename T, typename D> T tc_cas_queue<T, D>::front()
 {
 	std::lock_guard<std::mutex> lock(_mutex);
 
 	return _queue.front();
 }
 
-template <typename T, typename D> bool TC_CasQueue<T, D>::pop_front(T& t)
+template <typename T, typename D> bool tc_cas_queue<T, D>::pop_front(T& t)
 {
 	std::lock_guard<std::mutex> lock(_mutex);
 	if (_queue.empty())
@@ -153,7 +154,7 @@ template <typename T, typename D> bool TC_CasQueue<T, D>::pop_front(T& t)
 	return true;
 }
 
-template <typename T, typename D> bool TC_CasQueue<T, D>::pop_front()
+template <typename T, typename D> bool tc_cas_queue<T, D>::pop_front()
 {
     std::lock_guard<std::mutex> lock(_mutex);
 	if (_queue.empty())
@@ -168,14 +169,14 @@ template <typename T, typename D> bool TC_CasQueue<T, D>::pop_front()
 	return true;
 }
 
-template <typename T, typename D> void TC_CasQueue<T, D>::push_back(const T& t)
+template <typename T, typename D> void tc_cas_queue<T, D>::push_back(const T& t)
 {
     std::lock_guard<std::mutex> lock(_mutex);
     _queue.push_back(t);
     ++_size;
 }
 
-template <typename T, typename D> void TC_CasQueue<T, D>::push_back(const queue_type& qt)
+template <typename T, typename D> void tc_cas_queue<T, D>::push_back(const queue_type& qt)
 {
 	std::lock_guard<std::mutex> lock(_mutex);
 
@@ -188,14 +189,14 @@ template <typename T, typename D> void TC_CasQueue<T, D>::push_back(const queue_
     }
 }
 
-template <typename T, typename D> void TC_CasQueue<T, D>::push_front(const T& t)
+template <typename T, typename D> void tc_cas_queue<T, D>::push_front(const T& t)
 {
 	std::lock_guard<std::mutex> lock(_mutex);
 	_queue.push_front(t);
 	++_size;
 }
 
-template <typename T, typename D> void TC_CasQueue<T, D>::push_front(const queue_type& qt)
+template <typename T, typename D> void tc_cas_queue<T, D>::push_front(const queue_type& qt)
 {
 	std::lock_guard<std::mutex> lock(_mutex);
 
@@ -208,7 +209,7 @@ template <typename T, typename D> void TC_CasQueue<T, D>::push_front(const queue
 	}
 }
 
-template <typename T, typename D> bool TC_CasQueue<T, D>::swap(queue_type& qt)
+template <typename T, typename D> bool tc_cas_queue<T, D>::swap(queue_type& qt)
 {
 	std::lock_guard<std::mutex> lock(_mutex);
 
@@ -222,20 +223,20 @@ template <typename T, typename D> bool TC_CasQueue<T, D>::swap(queue_type& qt)
     return true;
 }
 
-template <typename T, typename D> size_t TC_CasQueue<T, D>::size()const
+template <typename T, typename D> size_t tc_cas_queue<T, D>::size()const
 {
 	std::lock_guard<std::mutex> lock(_mutex);
     return _size;
 }
 
-template <typename T, typename D> void TC_CasQueue<T, D>::clear()
+template <typename T, typename D> void tc_cas_queue<T, D>::clear()
 {
 	std::lock_guard<std::mutex> lock(_mutex);
     _queue.clear();
     _size = 0;
 }
 
-template <typename T, typename D> bool TC_CasQueue<T, D>::empty() const
+template <typename T, typename D> bool tc_cas_queue<T, D>::empty() const
 {
 	std::lock_guard<std::mutex> lock(_mutex);
     return _queue.empty();

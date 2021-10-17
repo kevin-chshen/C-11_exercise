@@ -3,4 +3,9 @@
   <ItemGroup>
     <ClCompile Include="coroutine.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Filter Include="coroutine">
+      <UniqueIdentifier>{909a173d-619b-470a-be92-cc51cfa86799}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
 </Project>
